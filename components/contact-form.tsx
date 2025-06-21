@@ -52,10 +52,10 @@ export function ContactForm() {
       <CardHeader className="text-center">
         <CardTitle className="flex items-center justify-center gap-2 text-pink-200">
           <Mail className="h-5 w-5 text-pink-400" />
-          Send a Cosmic Message
+          Send a Message
         </CardTitle>
         <CardDescription className="text-pink-100/70">
-          Ready to launch your project into the digital cosmos? Let's connect across the stars!
+          Ready to launch your project? Let's connect and create something amazing together!
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -69,7 +69,7 @@ export function ContactForm() {
                 id="name"
                 name="name"
                 type="text"
-                placeholder="Your stellar name"
+                placeholder="Your name"
                 required
                 disabled={isSubmitting}
                 className="bg-black/20 border-pink-400/30 text-pink-100 placeholder:text-pink-300/50 focus:border-pink-400 focus:ring-pink-400/20"
@@ -83,7 +83,7 @@ export function ContactForm() {
                 id="email"
                 name="email"
                 type="email"
-                placeholder="your.cosmic@email.com"
+                placeholder="your.email@example.com"
                 required
                 disabled={isSubmitting}
                 className="bg-black/20 border-pink-400/30 text-pink-100 placeholder:text-pink-300/50 focus:border-pink-400 focus:ring-pink-400/20"
@@ -99,7 +99,7 @@ export function ContactForm() {
               id="subject"
               name="subject"
               type="text"
-              placeholder="What cosmic adventure awaits?"
+              placeholder="What would you like to discuss?"
               required
               disabled={isSubmitting}
               className="bg-black/20 border-pink-400/30 text-pink-100 placeholder:text-pink-300/50 focus:border-pink-400 focus:ring-pink-400/20"
@@ -113,7 +113,7 @@ export function ContactForm() {
             <Textarea
               id="message"
               name="message"
-              placeholder="Share your cosmic vision and let's create something stellar together..."
+              placeholder="Share your ideas and let's create something amazing together..."
               className="min-h-[120px] bg-black/20 border-pink-400/30 text-pink-100 placeholder:text-pink-300/50 focus:border-pink-400 focus:ring-pink-400/20"
               required
               disabled={isSubmitting}
@@ -129,12 +129,12 @@ export function ContactForm() {
             {isSubmitting ? (
               <>
                 <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
-                Launching Message...
+                Sending Message...
               </>
             ) : (
               <>
                 <Send className="mr-2 h-4 w-4" />
-                Launch Message
+                Send Message
               </>
             )}
           </Button>
@@ -142,14 +142,14 @@ export function ContactForm() {
           {submitStatus === "success" && (
             <div className="flex items-center gap-2 text-green-300 bg-green-500/10 border border-green-500/20 p-3 rounded-md">
               <CheckCircle className="h-5 w-5" />
-              <span>🚀 Message launched successfully! I'll beam back a response soon!</span>
+              <span>🚀 Message sent successfully! I'll get back to you soon!</span>
             </div>
           )}
 
           {submitStatus === "error" && (
             <div className="flex items-center gap-2 text-red-300 bg-red-500/10 border border-red-500/20 p-3 rounded-md">
               <AlertCircle className="h-5 w-5" />
-              <span>Houston, we have a problem! Please try again or contact me directly.</span>
+              <span>Something went wrong! Please try again or contact me directly.</span>
             </div>
           )}
         </form>
