@@ -1,0 +1,51 @@
+SRIDHARSHINI RESUME
+
+Contact Information:
+Email: sridharshini1208@gmail.com
+LinkedIn: https://www.linkedin.com/in/sri-dharshini-0817a528b
+
+EDUCATION:
+B.E Computer Science Engineering
+Sri Sairam Institute of Technology
+CGPA: 8.22/10
+2023 - 2027
+
+Senior Secondary
+SRDF Vivekananda Vidyalaya
+86.0%
+2022 - 2023
+
+Secondary
+SRDF Vivekananda Vidyalaya
+80.0%
+2021 - 2022
+
+EXPERIENCE:
+Webmaster - Yes Bioscience
+September 2023 - Present
+
+Web Developer Intern - Futurenet Technologies
+June 2025 - July 2025
+
+PROJECTS:
+1. AI Powered Chatbot for Netflix
+   Link: https://chatbot-support-e3aec.web.app/login
+
+2. Personalized News App
+
+3. Tourist Places App
+
+TECHNICAL SKILLS:
+Programming: Python, C, Java
+Web Technologies: HTML, CSS, JavaScript, React.js, Node.js, Flutter
+Database: MySQL
+
+ACHIEVEMENTS:
+- Completed Hindi Exams from Dakshin Bharat Hindi Prachar Sabha
+- NPTEL Certification - The Joy of Computing using Python
+- NPTEL Certification - Enhancing Soft Skills and Personality Development
+- NPTEL Silver Certification - Introduction to IoT
+
+POSITIONS OF RESPONSIBILITY:
+- Member of Leo Club
+- Active NSS Volunteer

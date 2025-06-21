@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 13% 9%;
+    --foreground: 300 20% 98%;
+    --card: 220 13% 12%;
+    --card-foreground: 300 20% 98%;
+    --popover: 220 13% 12%;
+    --popover-foreground: 300 20% 98%;
+    --primary: 322 84% 60%;
+    --primary-foreground: 300 20% 98%;
+    --secondary: 260 15% 15%;
+    --secondary-foreground: 300 20% 98%;
+    --muted: 220 13% 15%;
+    --muted-foreground: 300 8% 70%;
+    --accent: 280 100% 70%;
+    --accent-foreground: 300 20% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 220 13% 20%;
+    --input: 220 13% 20%;
+    --ring: 322 84% 60%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background: linear-gradient(135deg, #0f0f23 0%, #1a0b2e 25%, #16213e 50%, #0f3460 75%, #533a7d 100%);
+    min-height: 100vh;
+  }
+}
+
+/* Galaxy background animation */
+.galaxy-bg {
+  background: linear-gradient(135deg, #0f0f23 0%, #1a0b2e 25%, #16213e 50%, #0f3460 75%, #533a7d 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.galaxy-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(2px 2px at 20px 30px, #eee, transparent),
+    radial-gradient(2px 2px at 40px 70px, rgba(255, 255, 255, 0.8), transparent),
+    radial-gradient(1px 1px at 90px 40px, #fff, transparent),
+    radial-gradient(1px 1px at 130px 80px, rgba(255, 255, 255, 0.6), transparent),
+    radial-gradient(2px 2px at 160px 30px, #ddd, transparent);
+  background-repeat: repeat;
+  background-size: 200px 100px;
+  animation: sparkle 20s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes sparkle {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(200px);
+  }
+}
+
+/* Pink glow effects */
+.pink-glow {
+  box-shadow: 0 0 20px rgba(236, 72, 153, 0.3), 0 0 40px rgba(236, 72, 153, 0.2);
+}
+
+.cosmic-card {
+  background: linear-gradient(
+    135deg,
+    rgba(236, 72, 153, 0.1) 0%,
+    rgba(168, 85, 247, 0.1) 50%,
+    rgba(59, 130, 246, 0.1) 100%
+  );
+  border: 1px solid rgba(236, 72, 153, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.cosmic-text {
+  background: linear-gradient(135deg, #ec4899, #a855f7, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.pulse-pink {
+  animation: pulse-pink 2s infinite;
+}
+
+@keyframes pulse-pink {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(236, 72, 153, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(236, 72, 153, 0.8), 0 0 40px rgba(168, 85, 247, 0.4);
+  }
+}
